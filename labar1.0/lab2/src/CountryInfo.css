@@ -1,0 +1,17 @@
+.countryInfo {
+    color: red;
+}
+
+h2, p{
+    margin: 0px;
+    padding: 0;
+}
+
+.progress{
+    height: 20px;
+    border: 1px solid #000;
+    background-color: blue;
+    margin-bottom: 15px;
+    transform-origin: left; 
+    transition: transform 0.5s ease-out;
+}
