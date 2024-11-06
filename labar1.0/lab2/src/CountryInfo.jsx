@@ -1,5 +1,6 @@
 import countries from 'world-countries';
 import './CountryInfo.css';
+import { Link } from 'react-router-dom';
 
 // CountryInfo component that displays information for the country at the specified index
 function CountryInfo({ country, maxArea, detail }) {
@@ -9,7 +10,9 @@ function CountryInfo({ country, maxArea, detail }) {
     }
     return (
         <div>
-            <h2>{country.name.common}</h2>
+            <Link to={`/country/${country.cca3}`}>
+                <h2>{country.name.common}</h2>
+            </Link>
             {detail ? (
                 <>
                     <p>Population: {country.population}</p>
